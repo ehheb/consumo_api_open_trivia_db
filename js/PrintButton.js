@@ -34,6 +34,7 @@ export default class PrintButton {
       let contador = 0;
       let numberQuestion = 0;
 
+
       arrayCorrectAnswers.forEach(correctAnswer => {
 
           numberQuestion++;
@@ -42,16 +43,18 @@ export default class PrintButton {
         
           if (answerChecked == null) {
               alert("Responda todas las preguntas");
-              
           }
-          
+
           let labelAnswerChecked = answerChecked.labels[0].innerHTML;
+
+
 
           if (labelAnswerChecked.trim() == correct){
 
               contador++;
 
-          }         
+          }
+        
       })
 
       this.showResults(contador, tryAndId, arrayCorrectAnswers);

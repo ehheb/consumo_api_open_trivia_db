@@ -19,12 +19,10 @@ function getQuestions() {
         if(questionCategory != 'any') { 
             link += `&category=${questionCategory}`; 
         };
-        if(questionDifficulty != 'any') 
-        { 
+        if(questionDifficulty != 'any') { 
             link += `&difficulty=${questionDifficulty}`; 
         };
-        if(questionType != 'any') 
-        { 
+        if(questionType != 'any') { 
             link += `&type=${questionType}`; 
         };
 
